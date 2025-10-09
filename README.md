@@ -1,0 +1,2 @@
+This project deploys a Python Flask API for coworking space analytics using AWS services. 
+The application is containerized with Docker, stored in Amazon ECR, and deployed to an EKS cluster with PostgreSQL installed via Helm. AWS CodeBuild automates image building and pushing, while EBS CSI provides persistent storage. Logs are streamed to CloudWatch for monitoring. Developers can release updates by pushing code to GitHub, triggering a new build and rolling out the updated image automatically on Kubernetes.
